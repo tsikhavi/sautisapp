@@ -1,5 +1,11 @@
 {
     "recommendations": [
-        "webhint.vscode-webhint"
+        "webhint.vscode-webhint",
+        "rvest.vs-code-prettier-eslint",
+        "junstyle.php-cs-fixer",
+        "bmewburn.vscode-intelephense-client",
+        "xdebug.php-debug",
+        "devsense.phptools-vscode",
+        "rifi2k.format-html-in-php"
     ]
 }

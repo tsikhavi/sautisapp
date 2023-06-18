@@ -10,9 +10,9 @@ require_once 'partials/banner.php';
 
 ?>
 
-   
 
- 
+
+
 
 <?php
 require_once 'partials/footer.php';
