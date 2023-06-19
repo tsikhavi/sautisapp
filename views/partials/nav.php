@@ -1,6 +1,6 @@
 <header>
-    <nav class="sticky top-0 z-50 bg-slate-50 border-slate-200 px-2.5 font-sans text-sm capitalize 
-                font-bold lg:px-6 py-5 dark:bg-slate-900">
+    <nav class="sticky top-0 z-50 bg-white border-slate-200 px-2.5 font-sans text-sm capitalize 
+                font-bold lg:px-6 py-5 dark:bg-slate-950">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <a href="/" class="flex items-center">
             <div class="h-8 w-8 m-2">

@@ -9,7 +9,10 @@ $routes = [
     '/cases' => 'controllers/cases.php',
     '/portfolio' => 'controllers/portfolio.php',
     '/seo' => 'controllers/seo.php',
-    '/services' => 'controllers/services.php', 
+    '/services' => 'controllers/services.php',
+    '/register' => 'controllers/register.php',
+    '/signin' => 'controllers/signIn.php',
+
 ];
 
 function routeToController($uri, $routes) {

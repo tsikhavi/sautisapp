@@ -7,8 +7,8 @@ if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localS
 }
 
 
-var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
-var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
 // Change the icons inside the button based on previous settings
 if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -17,7 +17,7 @@ themeToggleLightIcon.classList.remove('hidden');
 themeToggleDarkIcon.classList.remove('hidden');
 }
 
-var themeToggleBtn = document.getElementById('theme-toggle');
+const themeToggleBtn = document.getElementById('theme-toggle');
 
 themeToggleBtn.addEventListener('click', function() {
 
@@ -70,4 +70,20 @@ const backToTop = document.getElementById('backToTop');
     window.history.back();
     }
 
+//sidebar
+    const sideBar = document.getElementById("mobile-nav");
+    const openSidebar = document.getElementById("openSideBar");
+    const closeSidebar = document.getElementById("closeSideBar");
+    sideBar.style.transform = "translateX(-260px)";
 
+    function sidebarHandler(flag) {
+        if (flag) {
+            sideBar.style.transform = "translateX(0px)";
+            openSidebar.classList.add("hidden");
+            closeSidebar.classList.remove("hidden");
+        } else {
+            sideBar.style.transform = "translateX(-260px)";
+            closeSidebar.classList.add("hidden");
+            openSidebar.classList.remove("hidden");
+        }
+    }

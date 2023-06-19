@@ -1,4 +1,4 @@
-<footer class="mt-10 bg-slate-900 sm:p-6 dark:bg-slate-950">
+<footer class="mt-0 bg-slate-900 sm:p-6 dark:bg-slate-950">
     <div class="mx-auto max-w-screen-xl">
         <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
