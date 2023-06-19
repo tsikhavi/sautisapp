@@ -1,13 +1,16 @@
 <header>
-    <nav class="sticky top-0 z-50 bg-slate-100 border-slate-200 px-2.5 font-sans text-sm capitalize 
-                font-bold lg:px-6 py-2.5 dark:bg-slate-950">
+    <nav class="sticky top-0 z-50 bg-slate-50 border-slate-200 px-2.5 font-sans text-sm capitalize 
+                font-bold lg:px-6 py-5 dark:bg-slate-900">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <a href="/" class="flex items-center">
-                <img src="/assets/images/logo/sautis-website-favicon-color.svg" class="mr-3 h-6 sm:h-9"
-                    alt="Sautis Logo" />
-                <span class=" font-sans uppercase self-center text-lg font-semibold whitespace-nowrap text-transparent 
-                dark:text-transparent bg-clip-text dark:bg-clip-text bg-gradient-to-l dark:bg-gradient-to-l
-                    from-green-600 to-yellow-500 dark:from-green-500 dark:to-yellow-500 p-1">Sautis</span>
+            <div class="h-8 w-8 m-2">
+                <img src="/assets/images/logo/sautis-website-favicon-black.svg" alt="Light mode" class="block dark:hidden" />
+                <img src="/assets/images/logo/sautis-website-favicon-white.svg" alt="Dark mode" class="hidden dark:block" />
+                
+                </div>
+                <!--
+                <p class=" inline font-sans uppercase self-center text-lg font-semibold whitespace-nowrap text-slate-700 dark:text-slate-300 p-1">Sautis</p>    
+-->
             </a>
             <div class="flex items-center lg:order-2">
                 <button id="theme-toggle" type="button" class="text-slate-600 dark:hover:text-slate-600 rounded-full bg-no dark:text-slate-200
@@ -52,15 +55,15 @@
             <div class=" hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                 <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                     <li>
-                        <a href="/" class="<?= urlIs('/') ? '  text-green-500 dark:text-green-400' : 'text-slate-700 dark:text-slate-400' ?>
+                        <a href="/" class="<?= urlIs('/') ? '  text-green-800 dark:text-green-400' : 'text-slate-700 dark:text-slate-400' ?>
                         block py-2 pr-4 pl-3 border-b border-slate-100 hover:bg-slate-100 lg:hover:bg-transparent lg:border-0
-                         lg:hover:text-green-500 lg:p-0 lg:dark:hover:text-green-500 dark:hover:bg-slate-700 dark:hover:text-green-500 
+                         lg:hover:text-green-500 lg:p-0 lg:dark:hover:text-green-500 dark:hover:bg-slate-700 dark:hover:text-green-500 text-sm 
                               lg:dark:hover:bg-transparent dark:border-slate-700">Home
                         </a>
                     </li>
                     <li>
                         <a href="/about" class="<?= urlIs('/about') ? ' text-green-500 dark:text-green-400' : 'text-slate-700 dark:text-slate-400' ?>
-                        block py-2 pr-4 pl-3 border-b border-slate-100
+                        block py-2 pr-4 pl-3 border-b border-slate-100 text-sm
                              hover:bg-slate-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-green-500 lg:p-0
                                lg:dark:hover:text-green-500 dark:hover:bg-slate-700 dark:hover:text-green-500 
                               lg:dark:hover:bg-transparent dark:border-slate-700">about
@@ -69,7 +72,7 @@
                     </li>
                     <li>
                         <a href="/contact" class="<?= urlIs('/contact') ? ' text-green-500 dark:text-green-400' : 'text-slate-700 dark:text-slate-400' ?>
-                        block py-2 pr-4 pl-3 border-b border-slate-100
+                        block py-2 pr-4 pl-3 border-b border-slate-100 text-sm
                              hover:bg-slate-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-green-500 lg:p-0
                                lg:dark:hover:text-green-500 dark:hover:bg-slate-700 dark:hover:text-green-500 
                               lg:dark:hover:bg-transparent dark:border-slate-700">contact
@@ -77,7 +80,7 @@
                     </li>
                     <li>
                         <a href="/services" class="<?= urlIs('/services') ? ' text-green-500 dark:text-green-400' : 'text-slate-700 dark:text-slate-400' ?>
-                        block py-2 pr-4 pl-3 border-b border-slate-100
+                        block py-2 pr-4 pl-3 border-b border-slate-100 text-sm
                              hover:bg-slate-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-green-500 lg:p-0
                                lg:dark:hover:text-green-500 dark:hover:bg-slate-700 dark:hover:text-green-500 
                               lg:dark:hover:bg-transparent dark:border-slate-700">services
@@ -88,7 +91,7 @@
                         <a href="/cases" class="<?= urlIs('/cases') ? ' text-green-500 dark:text-green-400' : 'text-slate-700 dark:text-slate-400' ?>
                         block py-2 pr-4 pl-3 border-b border-slate-100 hover:bg-slate-100 lg:hover:bg-transparent lg:border-0
                          lg:hover:text-green-500 lg:p-0 lg:dark:hover:text-green-500 dark:hover:bg-slate-700 dark:hover:text-green-500 
-                              lg:dark:hover:bg-transparent dark:border-slate-700">cases
+                              lg:dark:hover:bg-transparent dark:border-slate-700 text-sm">cases
 
                         </a>
                     </li>
@@ -96,7 +99,7 @@
                         <a href="/portfolio" class="<?= urlIs('/portfolio') ? ' text-green-500 dark:text-green-400' : 'text-slate-700 dark:text-slate-400' ?>
                         block py-2 pr-4 pl-3 border-b border-slate-100 hover:bg-slate-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-green-500 lg:p-0
                                lg:dark:hover:text-green-500 dark:hover:bg-slate-700 dark:hover:text-green-500 
-                              lg:dark:hover:bg-transparent dark:border-slate-700">portfolio</a>
+                              lg:dark:hover:bg-transparent dark:border-slate-700 text-sm">portfolio</a>
                     </li>
                 </ul>
             </div>

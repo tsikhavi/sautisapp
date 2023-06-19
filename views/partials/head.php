@@ -45,8 +45,52 @@
 
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
+    @keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+.line {
+  width: 100%;
+  max-width: 800px;
+  height: 8px;
+  margin: 0 0 10px 0;
+  position: relative;
+  display: inline-block;
+  background-color: rgba(255,255,255,1);
+}
+
+
+/* Not great browser support :(
+html {
+  scroll-behavior: smooth;
+} 
+*/
+nav {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: black;
+  padding: 0px 10px;
+}
+nav a {
+  color: white;
+  font-size: 1.3em;
+  line-height: 1.7;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a.active {
+  color: red;
+}
+
     </style>
 
 </head>
 
 <body class="bg-white dark:bg-slate-950 h-100 w-full text-center text-slate-700 dark:text-slate-100  ">
+  

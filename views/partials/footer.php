@@ -106,7 +106,7 @@
     <i class="fa-solid fa-arrow-up p-2.5"></i></a>
 <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
 
-<script src="/assets/js/main.js "></script>
+<script src="/assets/js/animation.js "></script>
 <script src="/assets/js/app.js "></script>
 
 
