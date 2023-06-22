@@ -6,9 +6,21 @@
             <p class="pt-8 md:pt-4 text-slate-600 dark:text-slate-300 text-left" >Sign up for our newsletter and get weekly updates. 
                 We only send emails about our latest products on the market once a week every Friday.</p>
             <div class="mt-8 md:flex justify-start md:gap-4">
-            <input type="email" placeholder="123@example.com" class="placeholder-slate-500 dark:placeholder-slate-500 w-full md:w-1/2 p-4 
-            focus:ring-2 focus:ring-purple-600 dark:focus:ring-purple-600 active:ring-purple-600 dark:active:ring-purple-600 grid 
-            place-items-center rounded-md active:outline-none focus:outline-none bg-slate-100 dark:bg-slate-900 " />
+            <input type="email" placeholder="123@example.com" class="
+             w-full md:w-1/2 p-4 
+           
+            place-items-center rounded-md active:outline-none focus:outline-none bg-slate-50 dark:bg-slate-900 
+            
+            
+              border-slate-900 text-sm
+                placeholder-slate-500 dark:placeholder-slate-500 
+            focus:ring-2 focus:ring-green-600 dark:focus:ring-green-600 active:ring-green-600 dark:active:ring-green-600 grid 
+
+            invalid:border-red-500 dark:invalid:border-red-500 invalid:text-red-600 dark:invalid:text-red-600
+      focus:invalid:border-red-500 dark:focus:invalid:border-red-500 focus:invalid:ring-red-500 dark:focus:invalid:ring-red-500 " 
+
+            
+            />
 
             <button class="w-full md:w-auto bg-slate-800 dark:bg-slate-800 text-slate-50 dark:text-slate-300 px-8 py-4 
             rounded-md hover:bg-slate-900 grid hover:text-slate-200 dark:hover:text-slate-200 border-none active:text-purple-600 dark:active:text-purple-600

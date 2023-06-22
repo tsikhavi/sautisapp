@@ -17,8 +17,12 @@ require_once 'partials/sidebar.php';
         <main>
             
         <?php 
-        require_once 'partials/banner.php';
+        #require_once 'partials/banner.php';
+        require_once 'partials/main.php';
+        require_once 'views/servicesMain.php';
+        require_once 'views/showCase.php';
         require_once 'views/features.php';
+        require_once 'views/contactForm.php';
         require_once 'views/subscribe.php';
         ?>
             

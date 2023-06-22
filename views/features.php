@@ -1,6 +1,6 @@
-<section class="bg-white dark:bg-slate-950 pl-20">
-  <div class="py-8 px-0 mx-0 max-w-screen-xl sm:py-16 lg:px-6">
-      <div class="max-w-screen-md mb-8 lg:mb-16">
+<section class="bg-white dark:bg-slate-950 mx-0">
+  <div class="py-8 px-0 max-w-screen-xl sm:py-16 lg:px-6">
+      <div class="max-w-screen-md mb-8 lg:mb-16 ">
           <h2 class="mb-4 text-2xl tracking-tight font-extrabold text-slate-900 dark:text-slate-200 text-left ">Features : Tailored for business teams like yours</h2>
           <p class="text-slate-500 sm:text-base dark:text-slate-400 text-left ">Sautis offers comprehensive solutions that cater to the needs of modern enterprises. We specialize in markets where the strategic implementation of technology, innovation, 
             and capital can unlock substantial long-term value and drive sustained economic growth.</p>

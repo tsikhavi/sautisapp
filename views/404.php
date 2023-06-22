@@ -7,7 +7,7 @@
         class="flex items-center mt-0 flex-col justify-center lg:flex-row py-10 px-6 md:px-24 md:py-10 lg:py-10 gap-16 lg:gap-28">
         <div class="w-full lg:w-1/2">
             <h1 class="button2 flex-inline py-4 text-3xl lg:text-4xl font-extrabold text-slate-700 dark:text-slate-100">
-                Error Loading Page
+                Error  
                 <i class="fa-regular fa-circle-question fa-spin fa-spin-reverse px-2 text-slate-600 font-extrabold"></i>
             </h1>
 
@@ -28,7 +28,7 @@
         </div>
         <div class="button lg:w-1/2">
             <h1 class="flex-inline py-4 text-3xl lg:text-4xl font-extrabold text-slate-700 dark:text-slate-100"
-                id="myText">
+                >Error <span class="p-2"id="typed"></span>
 
             </h1>
             <h2 class="flex-inline py-4 text-3xl lg:text-4xl font-extrabold text-slate-700 dark:text-slate-100">

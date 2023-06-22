@@ -28,10 +28,69 @@
                     </svg>
                 </button>
                 <span class="text-slate-500 dark:text-slate-200 px-1 text-xl inline">|</span>
-                <a href="#" class="text-slate-800 hover:text-green-400 dark:text-slate-200 bg-slate-200
-                     dark:bg-slate-600 hover:bg-slate-200 dark:hover:bg-slate-700  focus:ring-4 dark:hover:text-green-400
-                     focus:ring-slate-400 dark:focus:ring-slate-800 font-medium rounded-lg text-xs px-2.5 py-1.5 mr-2 ml-2
-                     focus:outline-none ">Log In</a>
+
+   <!-- ====== Modal Section Start -->
+   <section x-data="{modalOpen: false}">
+  <div class="container mx-auto py-auto">
+    <button
+      @click="modalOpen = true"
+      class="bg-inherite rounded-full py-3 px-6  text-base font-medium text-inherit
+      inline-flex items-center justify-center  mb-2  
+                   sm:w-auto sm:mb-0
+                 w-full md:w-auto bg-slate-100 dark:bg-slate-200 text-slate-700 dark:text-slate-700 
+            hover:bg-slate-900 hover:text-slate-300 dark:hover:text-slate-200 border-none active:text-green-600 dark:active:text-green-600
+             place-items-center mt-4 md:mt-0 focus:outline-none dark:hover:bg-slate-900 active:ring-green-600 
+            focus:ring-2 focus:ring-green-600 dark:focus:ring-green-600  focus:ring-opacity-50
+      
+      "
+    >
+      Login
+    </button>
+  </div>
+  <div
+    x-show="modalOpen"
+    x-transition
+    class="fixed top-0 left-0 flex h-full min-h-screen w-full items-center justify-center bg-white dark:bg-slate-950 bg-opacity-90 px-4 py-5 z-50"
+
+  >
+    <div
+      @click.outside="modalOpen = false"
+      class="w-full max-w-[570px] rounded-[20px] bg-inherit py-12 px-8 text-base text-inherit text-center md:py-[60px] md:px-[70px]"
+    >
+      <h3 class="text-dark pb-2 text-xl font-bold sm:text-2xl">
+        Your Message Sent Successfully
+      </h3>
+      <span
+        class="bg-primary mx-auto mb-6 inline-block h-1 w-[90px] rounded"
+      ></span>
+      <p class="text-body-color mb-10 text-base leading-relaxed">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since
+      </p>
+      <div class="-mx-3 flex flex-wrap">
+        <div class="w-1/2 px-3">
+          <button
+            @click="modalOpen = false"
+            class="text-dark block w-full rounded-lg border border-[#E9EDF9] p-3 text-center text-base font-medium transition hover:border-red-600 hover:bg-red-600 hover:text-"
+          >
+            Cancel
+          </button>
+        </div>
+        <div class="w-1/2 px-3">
+          <button
+            class="text-dark block w-full rounded-lg border border-[#E9EDF9] p-3 text-center text-base font-medium transition hover:border-green-600 hover:bg-green-600 hover:text-slate-100"
+          >
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ====== Modal Section End -->
+
+               
 
                 <button data-collapse-toggle="mobile-menu-2" type="button"
                     class="inline-flex items-center p-2 ml-1 text-sm text-slate-500 rounded-lg lg:hidden hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-200 dark:text-slate-400 dark:hover:bg-slate-700 dark:focus:ring-slate-600"

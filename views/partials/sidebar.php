@@ -1,8 +1,8 @@
-<div class="flex flex-no-wrap ">
+<div class="flex flex-no-wrap mx-2 sidebarPage ">
     <!-- Sidebar starts -->
     <!-- Remove class [ hidden ] and replace [ sm:flex ] with [ flex ] -->
-    <div style="min-height: 716px" class="w-64 absolute sm:relative bg-slate-50 dark:bg-slate-950 shadow md:h-full flex-col 
-                    justify-between hidden sm:flex border-2 border-slate-200 dark:border-slate-800">
+    <div style="min-height: 716px;" class="w-64 sm:relative bg-white dark:bg-slate-950 shadow md:h-full flex-col 
+                    justify-between flex fixed top-1">
         <div class="px-8">
             <div class="h-30 w-full mt-5 flex items-center">
                 <img class="h-auto w-full" src="/assets/images/logo/logo-main.png" alt="Logo">
